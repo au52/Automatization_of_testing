@@ -28,7 +28,7 @@
 
 #import math
 #def square(x):
-#    return math.ceil(x) ** 2
+#    return math.ceil(x ** 2)
 #x = float(input('Введите длину стороны квадрата: '))
 #print('Площадь квадрата равна: ' + str(square(x)))
 
