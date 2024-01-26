@@ -1,0 +1,7 @@
+https://happypython.ru/2022/11/27/selenium-chromedriver-find-elements/
+
+https://selenium-python.com/locating-web-elements
+
+https://www.selenium.dev/documentation/webdriver/interactions/alerts/
+
+https://fullstacker.ru/selenium-rabota-s-frejmami-i-alertami
