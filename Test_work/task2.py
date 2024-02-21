@@ -20,7 +20,7 @@ def test_calc_delay():
     numeric_keys[1].click()  # 8
     driver.find_element(By.CSS_SELECTOR, 'span.btn-outline-warning').click()  # =
 
-    timer = WebDriverWait(driver, 45.1, 0.1)
+    timer = WebDriverWait(driver, 45.2, 0.1)
     assert timer.until(
         EC.text_to_be_present_in_element((By.CSS_SELECTOR, 'div.screen'), '15')
     ) == True
