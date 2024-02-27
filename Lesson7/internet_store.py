@@ -31,16 +31,13 @@ class InternetStore:
         self.drv.find_element(By.CSS_SELECTOR, '#checkout').click()
 
     def customer_first_name_send(self, first_name):
-        self.first_name = first_name
-        self.drv.find_element(By.CSS_SELECTOR, '#first-name').send_keys(self.first_name)
+        self.drv.find_element(By.CSS_SELECTOR, '#first-name').send_keys(first_name)
 
     def customer_last_name_send(self, last_name):
-        self.last_name = last_name
-        self.drv.find_element(By.CSS_SELECTOR, '#last-name').send_keys(self.last_name)
+        self.drv.find_element(By.CSS_SELECTOR, '#last-name').send_keys(last_name)
 
     def custoner_zip_code_send(self, zip_code):
-        self.zip_code = zip_code
-        self.drv.find_element(By.CSS_SELECTOR, '#postal-code').send_keys(self.zip_code)
+        self.drv.find_element(By.CSS_SELECTOR, '#postal-code').send_keys(zip_code)
 
     def continue_click(self):
         self.drv.find_element(By.CSS_SELECTOR, '#continue').click()

@@ -11,17 +11,14 @@ class FormFilling:
         self.red = 'rgba(248, 215, 218, 1)'
 
     def send_data(self, selector, value):
-        self.sel = selector
-        self.val = value
-        self.drv.find_element(By.NAME, self.sel).clear()
-        self.drv.find_element(By.NAME, self.sel).send_keys(self.val)
+        self.drv.find_element(By.NAME, selector).clear()
+        self.drv.find_element(By.NAME, selector).send_keys(value)
 
     def submit_data(self):
         self.drv.find_element(By.CSS_SELECTOR, 'button[type="submit"]').click()
 
     def get_cell_color(self, selector):
-        self.sel = selector
-        return self.drv.find_element(By.CSS_SELECTOR, '#'+self.sel).\
+        return self.drv.find_element(By.CSS_SELECTOR, '#'+selector).\
                value_of_css_property('background-color')
 
 

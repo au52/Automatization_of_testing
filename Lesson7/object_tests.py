@@ -53,7 +53,7 @@ def test_calc_delay():
     delay_status = calc.delay_check()
     calc.print_result()
     driver.quit()
-    assert delay_status == True
+    assert delay_status is True
 # --------------------------------------------------------------------------
 
 # Задание 3. Автотест на интернет-магазин
